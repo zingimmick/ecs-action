@@ -4,4 +4,4 @@ set -e
 ls
 PATH="/root/.composer/vendor/bin:$PATH"
 echo $PATH
-ecs check --fix $*
+/root/.composer/vendor/bin/ecs check --fix $*
