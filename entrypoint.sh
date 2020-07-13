@@ -2,6 +2,6 @@
 
 set -e
 ls
-PATH="/root/.composer/vendor/bin/.composer/vendor/bin:$PATH"
+PATH="/root/.composer/vendor/bin:$PATH"
 echo $PATH
 ecs check --fix $*
