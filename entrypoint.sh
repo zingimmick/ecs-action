@@ -1,5 +1,5 @@
 #!/bin/sh -l
 
 set -e
-
-/root/.composer/vendor/bin/ecs check --fix $*
+PATH="$HOME/.composer/vendor/bin:$PATH"
+ecs check --fix $*
