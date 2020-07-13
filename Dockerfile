@@ -10,6 +10,6 @@ LABEL "homepage"="http://github.com/actions"
 LABEL "maintainer"="zingimmick<zingimmick@outlook.com>"
 
 COPY --from=composer /usr/bin/composer /usr/bin/composer
-RUN composer global require symplify/easy-coding-standard --prefer-dist
+RUN composer global require zing/coding-standard --prefer-dist
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
