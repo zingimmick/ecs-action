@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Easy Coding Standard
-      uses: zingimmick/ecs-action@0.0.2
+      uses: zingimmick/ecs-action@0.0.3
 ```
 
 _to use a custom config for example, --fix and --clear-cache option:_
@@ -29,9 +29,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Easy Coding Standard
-      uses: zingimmick/ecs-action@0.0.2
+      uses: zingimmick/ecs-action@0.0.3
       with:
-        args: --config=ecs.yaml
+        args: --config=ecs.yaml --fix --clear-cache
 ```
 
 **You can copy/paste the .github folder (under examples/) to your project and that's all!**
