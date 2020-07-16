@@ -9,7 +9,9 @@ LABEL "repository"="http://github.com/zingimmick/ecs-action"
 LABEL "homepage"="http://github.com/actions"
 LABEL "maintainer"="zingimmick<zingimmick@outlook.com>"
 
-COPY --from=composer /usr/bin/composer /usr/bin/composer
-RUN composer global require zing/coding-standard --prefer-dist --stability dev
+RUN wget https://github.com/symplify/easy-coding-standard-prefixed/raw/v8.1.10/ecs.phar -O ecs \
+    && chmod a+x ecs \
+    && mv ecs /usr/local/bin/ecs
+
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
