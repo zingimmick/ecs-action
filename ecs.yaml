@@ -7,4 +7,4 @@ parameters:
     - 'clean-code'
     - 'common'
   paths:
-    - examples
+    - tests
