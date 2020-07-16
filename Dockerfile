@@ -9,7 +9,7 @@ LABEL "repository"="http://github.com/zingimmick/ecs-action"
 LABEL "homepage"="http://github.com/actions"
 LABEL "maintainer"="zingimmick<zingimmick@outlook.com>"
 
-RUN wget https://github.com/symplify/easy-coding-standard-prefixed/raw/v8.1.10/ecs.phar -O ecs \
+RUN wget https://github.com/symplify/easy-coding-standard-prefixed/raw/v8.1.6/ecs.phar -O ecs \
     && chmod a+x ecs \
     && mv ecs /usr/local/bin/ecs
 
