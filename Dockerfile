@@ -1,6 +1,6 @@
 FROM php:7.4-alpine
 
-LABEL "com.github.actions.name"="ecs-action"
+LABEL "com.github.actions.name"="Easy Coding Standard Action"
 LABEL "com.github.actions.description"="Use Easy Coding Standard via GithubAction."
 LABEL "com.github.actions.icon"="check"
 LABEL "com.github.actions.color"="blue"
