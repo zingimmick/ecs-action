@@ -18,7 +18,7 @@ jobs:
       uses: zingimmick/ecs-action@0.0.2
 ```
 
-_to use a custom config for example, --diff and --dry-run option:_
+_to use a custom config for example, --fix and --clear-cache option:_
 ```diff
 on: [push, pull_request]
 name: lint
