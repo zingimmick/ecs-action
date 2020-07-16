@@ -1,0 +1,10 @@
+parameters:
+  sets:
+    - 'psr12'
+    - 'php70'
+    - 'php71'
+    - 'dead-code'
+    - 'clean-code'
+    - 'common'
+  paths:
+    - examples
