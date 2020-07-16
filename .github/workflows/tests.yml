@@ -22,4 +22,4 @@ jobs:
     - uses: actions/checkout@v2
     - uses: zingimmick/ecs-action@develop
       with:
-        args: --config=ecs.yaml
+        args: --config=ecs.yaml --dry-run
