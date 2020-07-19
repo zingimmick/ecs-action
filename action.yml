@@ -10,6 +10,15 @@ description: 'Use Easy Coding Standard via GithubAction.'
 
 name: 'Easy Coding Standard Action'
 
+inputs:
+    version:
+        description: 'Which version of Rector'
+        required: false
+        default: 'master'
+
 runs:
     using: 'docker'
     image: 'Dockerfile'
+    args:
+        - ${{ inputs.version }}
+        - ${{ inputs.args }}
