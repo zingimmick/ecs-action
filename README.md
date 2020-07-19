@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Easy Coding Standard
+    - name: Easy Coding Standard Action
       uses: zingimmick/ecs-action@0.0.4
 ```
 
@@ -28,10 +28,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Easy Coding Standard
+    - name: Easy Coding Standard Action
       uses: zingimmick/ecs-action@0.0.4
       with:
-        args: --config=ecs.yaml --fix --clear-cache
++        version: v8.1.6
++        args: --config=ecs.yaml --fix --clear-cache
 ```
 
 **You can copy/paste the .github folder (under examples/) to your project and that's all!**
