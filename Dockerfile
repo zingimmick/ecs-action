@@ -9,7 +9,11 @@ LABEL "repository"="http://github.com/zingimmick/ecs-action"
 LABEL "homepage"="http://github.com/actions"
 LABEL "maintainer"="zingimmick<zingimmick@outlook.com>"
 
-RUN apk add libzip-dev
+RUN apk add --no-cache \
+	wget \
+	git \
+	libzip-dev \
+    && docker-php-ext-install -j$(nproc) zip
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
