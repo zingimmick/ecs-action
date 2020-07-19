@@ -2,7 +2,7 @@
 
 set -e
 
-wget https://github.com/symplify/easy-coding-standard-prefixed/archive/$1.tar.gz | tar -xzv ecs \
+wget https://github.com/symplify/easy-coding-standard-prefixed/archive/$1.tar.gz | tar --strip-components 1 -xzv ecs easy-coding-standard-prefixed-$1/ecs \
     && chmod a+x ecs \
     && mv ecs /usr/local/bin/ecs
 
