@@ -22,4 +22,5 @@ jobs:
       - uses: actions/checkout@v2
       - uses: zingimmick/ecs-action@0.0.3
         with:
+          version: v0.7.47
           args: --config=ecs.yaml

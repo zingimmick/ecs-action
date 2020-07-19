@@ -20,4 +20,6 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - uses: actions/checkout@v2
-    - uses: zingimmick/ecs-action@develop
+    - uses: zingimmick/ecs-action@select-version
+      with:
+        version: v8.1.6
