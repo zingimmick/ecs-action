@@ -9,7 +9,7 @@ LABEL "repository"="http://github.com/zingimmick/ecs-action"
 LABEL "homepage"="http://github.com/actions"
 LABEL "maintainer"="zingimmick<zingimmick@outlook.com>"
 
-RUN apk add gzip
+RUN apk add gunzip
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
