@@ -2,7 +2,7 @@
 
 set -e
 
-wget https://github.com/symplify/easy-coding-standard-prefixed/raw/$1/ecs.phar -O ecs \
+wget https://github.com/symplify/easy-coding-standard-prefixed/archive/$1.tar.gz | tar -xzv ecs \
     && chmod a+x ecs \
     && mv ecs /usr/local/bin/ecs
 
