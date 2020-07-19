@@ -21,3 +21,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: zingimmick/ecs-action@0.0.4
+      with:
+        version: v8.1.6
