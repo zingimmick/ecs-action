@@ -12,7 +12,7 @@ name: 'Easy Coding Standard Action'
 
 inputs:
     version:
-        description: 'Which version of Rector'
+        description: 'Which version of Easy Coding Standard'
         required: false
         default: 'master'
 

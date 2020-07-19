@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Easy Coding Standard
-      uses: zingimmick/ecs-action@0.0.3
+      uses: zingimmick/ecs-action@0.0.4
 ```
 
 _to use a custom config for example, --fix and --clear-cache option:_
@@ -29,7 +29,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Easy Coding Standard
-      uses: zingimmick/ecs-action@0.0.3
+      uses: zingimmick/ecs-action@0.0.4
       with:
         args: --config=ecs.yaml --fix --clear-cache
 ```
